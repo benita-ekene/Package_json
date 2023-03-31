@@ -5,7 +5,8 @@ The event loop is a programming concept used in asynchronous programming(concurr
 In simple terms, the event loop manages a queue of tasks such as user interactions, timers, and network requests, and when a task completes, it notifies the event loop, which then processes the next task in the queue. This allows for multiple tasks to be executed simultaneously, without blocking each other.
 
 <h3>6 phases of the event loop</h3>
-In JavaScript, the event loop consists of six phases, each of which performs a specific task in the processing of events. These phases are as follows:
+In JavaScript, the event loop consists of six phases, each of which performs a specific task in the processing of events. These phases are as follows:<br>
+<br>
 
 **Timers phase:** In this phase, the event loop checks for any timer callbacks that have completed, and adds them to the callback queue. That is if there are timers set to 0 ms or setImmediate(), they will run here. Incomplete timers will run in later iterations of the loop.
 
