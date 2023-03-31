@@ -10,7 +10,7 @@ In JavaScript, the event loop consists of six phases, each of which performs a s
 
 **Timers phase:** In this phase, the event loop checks for any timer callbacks that have completed, and adds them to the callback queue. That is if there are timers set to 0 ms or setImmediate(), they will run here. Incomplete timers will run in later iterations of the loop.
 
-**I/O phase:**In this phase, the event loop checks for any I/O callbacks that have completed, such as network requests or file I/O, and adds them to the callback queue.
+**I/O phase:** In this phase, the event loop checks for any I/O callbacks that have completed, such as network requests or file I/O, and adds them to the callback queue.
 
 **Idle, Prepare phase:** In this phase, the event loop performs internal housekeeping tasks and prepares for the next iteration of the loop.
 
