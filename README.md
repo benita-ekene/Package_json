@@ -7,16 +7,16 @@ In simple terms, the event loop manages a queue of tasks such as user interactio
 <h3>6 phases of the event loop</h3>
 In JavaScript, the event loop consists of six phases, each of which performs a specific task in the processing of events. These phases are as follows:
 
-Timers phase: In this phase, the event loop checks for any timer callbacks that have completed, and adds them to the callback queue. That is if there are timers set to 0 ms or setImmediate(), they will run here. Incomplete timers will run in later iterations of the loop.
+<h4>Timers phase:</h4> In this phase, the event loop checks for any timer callbacks that have completed, and adds them to the callback queue. That is if there are timers set to 0 ms or setImmediate(), they will run here. Incomplete timers will run in later iterations of the loop.
 
-I/O phase: In this phase, the event loop checks for any I/O callbacks that have completed, such as network requests or file I/O, and adds them to the callback queue.
+<h4>I/O phase:</h4>In this phase, the event loop checks for any I/O callbacks that have completed, such as network requests or file I/O, and adds them to the callback queue.
 
-Idle, Prepare phase: In this phase, the event loop performs internal housekeeping tasks and prepares for the next iteration of the loop.
+<h4>Idle, Prepare phase:</h4> In this phase, the event loop performs internal housekeeping tasks and prepares for the next iteration of the loop.
 
-Poll phase: In this phase, the event loop retrieves new I/O events from the operating system's event queue and adds them to the callback queue. If there are no pending I/O events, the event loop will wait for new events to arrive.
+<h4>Poll phase:</h4> In this phase, the event loop retrieves new I/O events from the operating system's event queue and adds them to the callback queue. If there are no pending I/O events, the event loop will wait for new events to arrive.
 
-Check phase: In this phase, the event loop executes any callbacks that are on the callback queue, as a result of timer or I/O events.
+<h4>Check phase:</h4> In this phase, the event loop executes any callbacks that are on the callback queue, as a result of timer or I/O events.
 
-Close phase: In this final phase, the event loop executes any 'close' event callbacks, such as when a socket connection is closed.
+<h4>Close phase:</h4> In this final phase, the event loop executes any 'close' event callbacks, such as when a socket connection is closed.
 
-Once all phases have been completed, the event loop returns to the first phase and begins the process again.
+Once all phases have been completed, the event loop returns to the first phase and begins tshe process again.
