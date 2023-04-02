@@ -41,3 +41,22 @@ NPM5 (Node Package Manager 5) is a version of the Node.js package manager, which
 <li>Once you've provided all the necessary information, review the package.json file that was created.</li>
 <li>Save or edit and save package.json file</li>
 </ol>
+
+5.  <h3>How to run a script in the package.json</h3>
+
+To run a script defined in the package.json file in a Node.js project, you can use the npm run command followed by the script name.<br>
+<br>
+//Here is an example package.json file with a script named student:
+<br>
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "student": "node index.js"
+  }
+}
+<br>
+//To run the student script, open your terminal or command prompt, navigate to the<br>
+//project directory, and run the following command:
+<br>
+npm run student
