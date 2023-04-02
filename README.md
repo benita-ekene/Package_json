@@ -58,6 +58,6 @@ To run a script defined in the package.json file in a Node.js project, you can u
 }<br>
 <br>
 //To run the student script, open your terminal or command prompt, navigate to the<br>
-//project directory, and run the following command:
+//project directory, and run the following command:<br>
 <br>
 npm run student
