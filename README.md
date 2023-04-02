@@ -4,11 +4,11 @@ The event loop is a programming concept used in asynchronous programming(concurr
 
 In simple terms, the event loop manages a queue of tasks such as user interactions, timers, and network requests, and when a task completes, it notifies the event loop, which then processes the next task in the queue. This allows for multiple tasks to be executed simultaneously, without blocking each other.
 
-<h3>6 phases of the event loop</h3>
+2.  <h3>Six phases of the event loop</h3>
 In JavaScript, the event loop consists of six phases, each of which performs a specific task in the processing of events. These phases are as follows:<br>
 <br>
 
-**Timers phase:** In this phase, the event loop checks for any timer callbacks that have completed, and adds them to the callback queue. That is if there are timers set to 0 ms or setImmediate(), they will run here. Incomplete timers will run in later iterations of the loop.
+**Timers phase:** In this phase, the event loop checks for any timer callbacks that have completed, and adds them to the callback queue. 
 
 **I/O phase:** In this phase, the event loop checks for any I/O callbacks that have completed, such as network requests or file I/O, and adds them to the callback queue.
 
@@ -21,3 +21,23 @@ In JavaScript, the event loop consists of six phases, each of which performs a s
 **Close phase:** In this final phase, the event loop executes any 'close' event callbacks, such as when a socket connection is closed.
 
 Once all phases have been completed, the event loop returns to the first phase and begins tshe process again.
+
+3.  <h3> List of some best practices in server-side code development</h3>
+<ul>
+<li>Focus on Code Quality - use a formatter like Prettier and a linter like ESLint</li>
+<li>Prefer ES6+ and Async/Await</li>
+<li>Keep Code Small - Modularize your codes and employ Microservice architecture</li>
+<li>Handle Errors</li>
+</ul>
+
+4.  <h3>What is NPM5: How do you initialize a package in npm</h3>
+
+NPM5 (Node Package Manager 5) is a version of the Node.js package manager, which is used to install and manage third-party packages and dependencies for Node.js-based applications.
+<ol>To initialize a package in NPM
+<li>Open your terminal or command prompt.</li>
+<li>Navigate to the directory where you want to create your package.</li>
+<li>Type "npm init" and press Enter.</li>
+<li>Follow the prompts to provide the required information about your package.</li>
+<li>Once you've provided all the necessary information, review the package.json file that was created.</li>
+<li>Save or edit and save package.json file</li>
+</ol>
