@@ -48,13 +48,14 @@ To run a script defined in the package.json file in a Node.js project, you can u
 <br>
 //Here is an example package.json file with a script named student:
 <br>
-{
-  "name": "my-app",
-  "version": "1.0.0",
-  "scripts": {
-    "student": "node index.js"
-  }
-}
+<br>
+{<br>
+  "name": "my-app",<br>
+  "version": "1.0.0",<br>
+  "scripts": {<br>
+    "student": "node index.js"<br>
+  }<br>
+}<br>
 <br>
 //To run the student script, open your terminal or command prompt, navigate to the<br>
 //project directory, and run the following command:
