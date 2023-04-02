@@ -33,7 +33,7 @@ Once all phases have been completed, the event loop returns to the first phase a
 4.  <h3>What is NPM5: How do you initialize a package in npm</h3>
 
 NPM5 (Node Package Manager 5) is a version of the Node.js package manager, which is used to install and manage third-party packages and dependencies for Node.js-based applications.
-<ol>To initialize a package in NPM
+<ol> <h4>To initialize a package in NPM</h4>
 <li>Open your terminal or command prompt.</li>
 <li>Navigate to the directory where you want to create your package.</li>
 <li>Type "npm init" and press Enter.</li>
