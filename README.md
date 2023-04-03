@@ -61,3 +61,11 @@ To run a script defined in the package.json file in a Node.js project, you can u
 //project directory, and run the following command:<br>
 <br>
 npm run student
+
+6.  <h3> Initialize a package of your choice, give it a name and install the following npm packages to it, express, mongoose, joi.</h3>
+check the "<b>package</b>" file.
+
+
+
+
+
